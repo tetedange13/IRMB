@@ -5,13 +5,12 @@ Wrapper around [nf-core/rnavar](https://nf-co.re/rnavar/1.0.0) pipeline, to anal
 
 ## Installation
 
-This script must be run inside an activated conda environment
-It can be obtained with following commands:
-```
+This script must be run inside an activated conda environment, which can be obtained with following commands:
+```shell
 conda create --yes --name irmb --channel conda-forge --channel bioconda --channel defaults nf-core singularity nextflow=22.10
 conda activate irmb
 
-# Clone present repository and move inside it:
+# Then clone present repository and move inside it:
 git clone https://github.com/tetedange13/IRMB.git
 cd IRMB
 ```
@@ -20,7 +19,7 @@ cd IRMB
 ## Usage
 
 Simply run:
-```
+```shell
 ./run_pipeline.sh
 ```
 
@@ -31,7 +30,7 @@ After pipeline complete, result files will be under 'rnavar' sub-directory
 
 * Only chr22 from GRCh37 is analyzed
 
-* Recommand 'base recalibration' step is skipped
+* Recommended 'base recalibration' step is skipped
 
 * A STAR index is built with a given read length
   Here iGenomes' index is 100 pb and GIAB data are 150 pb

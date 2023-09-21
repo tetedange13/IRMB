@@ -35,3 +35,4 @@ After pipeline complete, result files will be under 'rnavar' sub-directory
 
 * A STAR index is built with a given read length
   Here iGenomes' index is 100 pb and GIAB data are 150 pb
+

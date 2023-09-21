@@ -1,6 +1,17 @@
 #!/usr/bin/env bash
 
 
+################# RUN_PIPELINE.SH
+#
+# AUTHOR : Felix VANDERMEEREN
+# CONTACT : felix.deslacs@gmail.com
+# DEPENDENCIES : Bash, Conda
+#
+# DESCRIPTION:
+#    Wrapper around nf-core/rnavar pipeline
+#
+
+
 set -oeu pipefail  # Best practice
 
 

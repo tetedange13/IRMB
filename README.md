@@ -2,6 +2,8 @@
 
 Wrapper around [nf-core/rnavar](https://nf-co.re/rnavar/1.0.0) pipeline, to analyse RNA-seq (Illumina mRNA) data from [GIAB](https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data_RNAseq/AshkenazimTrio/HG002_NA24385_son/Google_Illumina/mRNA/reads/)
 
+Reads are aligned using STAR, variants called with GATK HaplotypeCaller and annotated with ENSEMBL VEP
+
 
 ## Installation
 

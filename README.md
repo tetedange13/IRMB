@@ -39,6 +39,6 @@ After pipeline complete, result files will be under `rnavar` sub-directory
 
 * Recommended "base recalibration" step is skipped
 
-* A STAR index is built with a given read length
+* A STAR index is built with a given read length that should match read length of processed FASTQ. 
   Here iGenomes' index is 100 pb and GIAB data are 150 pb
 

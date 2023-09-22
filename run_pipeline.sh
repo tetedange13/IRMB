@@ -56,9 +56,10 @@ support="--read_length 150 --igenomes_ignore --fasta chr22.fa --gtf s3://ngi-ige
 # IDEA: Use 'not refSeq' cache -> no need to later pass special options to VEP ?
 # ENH: Use saref 'download_cache.nf' script to do that ?
 wget https://ftp.ensembl.org/pub/release-104/variation/indexed_vep_cache/homo_sapiens_refseq_vep_104_GRCh37.tar.gz
-tar xvzf homo_sapiens_refseq_vep_104_GRCh37.tar.gz
+mkdir caches
+tar xvzf homo_sapiens_refseq_vep_104_GRCh37.tar.gz -C caches
 # Single quotes are needed around vep_cache_version because pipeline expect a string
-annot="--annotate_tools vep --annotation_cache --vep_cache . --vep_genome $GENOME --vep_species homo_sapiens --vep_cache_version '104'"
+annot="--annotate_tools vep --annotation_cache --vep_cache caches --vep_genome $GENOME --vep_species homo_sapiens --vep_cache_version '104'"
 
 # Use a config file to:
 # * Tell GATK BedToIntervalList to '--DROP_MISSING_CONTIGS':
